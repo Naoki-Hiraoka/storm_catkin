@@ -1,0 +1,1 @@
+一部rosdepに対応していないので、https://www.stormchecker.org/documentation/obtain-storm/dependencies.html からdependencyを手動で入れよ.

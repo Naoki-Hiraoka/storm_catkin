@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>storm</name>
+  <version>1.9.0</version>
+  <description>storm</description>
+  <maintainer email="hiraoka@jsk.imi.i.u-tokyo.ac.jp">Naoki-Hiraoka</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>cmake</buildtool_depend>
+
+  <depend>git</depend>
+  <depend>boost</depend>
+  <depend>libgmp</depend>
+  <depend>automake</depend>
+  <depend>glpk</depend>
+  <depend>xerces</depend>
+  <depend>eigen</depend>
+
+
+
+  <export>
+    <build_type>cmake</build_type>
+  </export>
+
+</package>
+
