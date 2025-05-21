@@ -16,7 +16,7 @@
   <depend>glpk</depend>
   <depend>xerces</depend>
   <depend>eigen</depend>
-
+  <depend>spot</depend>
 
 
   <export>

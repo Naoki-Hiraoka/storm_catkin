@@ -1,0 +1,4 @@
+- git:
+    local-name: spot_catkin
+    uri: https://github.com/Naoki-Hiraoka/spot_catkin.git
+    version: 1.0

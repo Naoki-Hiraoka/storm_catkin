@@ -8,19 +8,12 @@ find_package(catkin REQUIRED COMPONENTS
 
 include(ExternalProject)
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
 execute_process(COMMAND
   git config --global http.sslVerify false)
-## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+
 ExternalProject_Add(
   storm
   GIT_REPOSITORY https://github.com/Naoki-Hiraoka/storm
   GIT_TAG fix-for-large-model
   CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX} -DCMAKE_BUILD_TYPE=Release
-  #INSTALL_COMMAND echo "install"
   )
-
-#install(CODE "execute_process(COMMAND make install WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/osqp-prefix/src/osqp-build)")
